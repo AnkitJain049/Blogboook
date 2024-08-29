@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Book</title>
+    <link rel="stylesheet" href="/blogstyle.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Blog Book</div>
+        <div class="user-actions">
+            <a href="/user/blogs">My Blogs</a>
+            <button style="margin-right: 30px;" onclick="window.location.href='/logout'">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>All Blogs</h1>
+        <button onclick="window.location.href='/new'">New Blog</button>
+        <ul class="blog-list">
+            <% blogs.forEach(blog => { %>
+                <li>
+                    <h2><%= blog.Title %></h2>
+                    <small><%= new Date(blog.Date).toDateString() %></small>
+                    <p><%= blog.Content %></p>
+                    <div class="author">By: <%= blog.Author %></div>
+
+
+                    <!-- <div class="actions">
+                        <a href="/edit/<%= blog._id %>">Edit</a>
+                        <a href="/api/posts/delete/<%= blog._id %>">Delete</a>
+                    </div> -->
+
+
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+
+</html>

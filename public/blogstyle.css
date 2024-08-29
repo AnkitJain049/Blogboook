@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: #fff;
+padding: 15px 20px;
+background-color: #333;
+z-index: 1000; /* Ensures it stays above other content */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .user-actions a,
+.navbar .user-actions button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #555;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .user-actions a:hover,
+.navbar .user-actions button:hover {
+    background-color: #777;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.container button {
+    display: block;
+    width: 150px;
+    margin: 0 auto 30px;
+    padding: 10px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #004a99;
+}
+
+.blog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-list li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-list li h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-list li small {
+    color: #999;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog-list li p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.blog-list li .author {
+    font-weight: bold;
+    color: #444;
+}
+
+.blog-list li .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.blog-list li .actions a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+.blog-list li .actions a:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
